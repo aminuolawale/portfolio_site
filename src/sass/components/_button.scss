@@ -1,0 +1,23 @@
+.button {
+    border: 1px solid $main-orange;
+    &--sm{
+        font-size:$sm-font;
+        padding:12px 20px;
+    }
+    &--md{
+        font-size:$md-font;
+        padding:20px 24px;
+    }
+    &--lg{
+        font-size:$lg-font;
+        padding:24px 30px;
+    }
+    &--xlg{
+        font-size:$xlg-font;
+        padding:30px 40px;
+    }
+
+    &--default {
+        color:$main-orange;
+    }
+}

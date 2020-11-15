@@ -1,0 +1,14 @@
+.layout {
+    &__abstractBg {
+    
+    }
+    &__content{
+        max-width: 1400px;
+        padding: 0 100px;
+        margin:auto;
+        background: $main-dark;
+        height:100vh;
+        box-shadow: 0 0 20px 10px rgba(0,0,0, .3);
+    }
+
+}

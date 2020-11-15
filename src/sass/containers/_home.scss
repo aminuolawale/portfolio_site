@@ -1,0 +1,44 @@
+.hero {
+    margin-top: 100px;
+    margin-bottom: 300px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    &__text{
+        position:relative;
+        z-index: 3;
+        &__accent {
+            height:10px;
+            width:300px;
+            background:$main-red;
+            position:absolute;
+            top:315px;
+            left:315px;
+            z-index: -1;
+        }
+        &__intro{
+            color:$main-mutedYellow;
+        }
+        &__main{
+            color:$main-orange;
+            font-size: $xlg-font;
+            width:540px;
+            &:hover {
+                cursor:pointer;
+                color: $main-yellow;
+            }
+        }
+        &__sub{
+            color:$main-yellow;
+            font-size: $xlg-font;
+        }&__p{
+            color:$main-mutedYellow;
+            width:540px;
+            margin-top: 20px;
+        }
+
+        &__button {
+            margin-top: 60px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.navbar {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    &__header {
+        height:100px;
+        display:flex;
+        align-items: center;
+    }
+    &__links {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+        &__item {
+            color:$main-yellow;
+            margin-left: 60px;
+            &:hover {
+                cursor:pointer;
+            }
+        }
+    }
+}
