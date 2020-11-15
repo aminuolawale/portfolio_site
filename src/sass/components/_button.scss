@@ -1,4 +1,9 @@
 .button {
+    &:hover {
+        cursor:pointer;
+        background:$main-orange;
+        color:$main-dark;
+    }
     border: 1px solid $main-orange;
     &--sm{
         font-size:$sm-font;

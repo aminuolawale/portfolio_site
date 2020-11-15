@@ -14,9 +14,10 @@
 
         &__item {
             color:$main-yellow;
-            margin-left: 60px;
+            padding: 0 30px;
             &:hover {
                 cursor:pointer;
+                color:$main-mutedYellow;
             }
         }
     }
