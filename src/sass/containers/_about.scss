@@ -48,7 +48,13 @@
                 @media screen and (max-width: $break-large) {
                     margin-top: 60px;
                   }
-            }
+                @media screen and (max-width: $break-small) {
+                    width:80%;
+                    font-size: $xsm-font;
+                    margin:auto;
+                    margin-top: 60px;
+                }
+            }   
             &__techs {
                 display:flex;
                 align-items: center;

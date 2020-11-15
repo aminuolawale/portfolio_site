@@ -16,8 +16,10 @@
             left:315px;
             z-index: -1;
             @media screen and (max-width: $break-large) {
-                top:420px;
-                left:65px;
+                top:255px;
+                left:70px;
+                width:215px;
+
               }
         }
         &__intro{
@@ -31,10 +33,18 @@
                 cursor:pointer;
                 color: $main-yellow;
             }
+            @media screen and (max-width: $break-small) {
+                width:100%;
+                font-size: $lg-font;
+              }
         }
         &__sub{
             color:$main-yellow;
             font-size: $xlg-font;
+            @media screen and (max-width: $break-small) {
+                width:100%;
+                font-size: $lg-font;
+              }
         }&__p{
             color:$main-mutedYellow;
             width:540px;
@@ -42,10 +52,23 @@
             @media screen and (max-width: $break-large) {
                 width:400px
               }
+              @media screen and (max-width: $break-small) {
+                width:100%;
+              }
         }
 
         &__button {
             margin-top: 60px;
         }
     }
+    &__image {
+        @media screen and (max-width: $break-small) {
+            display:none;
+          }
+    }
+    @media screen and (max-width: $break-small) {
+        display:block;
+        width:100%;
+        text-align: center;
+      }
 }

@@ -6,6 +6,11 @@
         height:100px;
         display:flex;
         align-items: center;
+        @media screen and (max-width: $break-small) {
+            display:flex;
+            align-items: center;
+            justify-content:center;
+          }
     }
     &__links {
         display:flex;
@@ -20,5 +25,11 @@
                 color:$main-mutedYellow;
             }
         }
+        @media screen and (max-width: $break-small) {
+            display:none;
+          }
     }
+    @media screen and (max-width: $break-small) {
+        display:block;
+      }
 }

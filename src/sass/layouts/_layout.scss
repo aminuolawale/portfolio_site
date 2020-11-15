@@ -1,11 +1,16 @@
 .layout {
-   
+    width:100%;
     &__content{
         max-width: 1400px;
         padding: 0 100px;
         margin:auto;
         background: $main-dark;
-        height:100vh;
+        @media screen and (max-width: $break-small) {
+            padding:0 20px;
+          }
     }
+    @media screen and (max-width: $break-small) {
+        width:100%;
+      }
 
 }
