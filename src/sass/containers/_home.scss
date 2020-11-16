@@ -15,12 +15,23 @@
             top:315px;
             left:315px;
             z-index: -1;
-            @media screen and (max-width: $break-large) {
-                top:255px;
-                left:70px;
-                width:215px;
+              @media screen and (max-width:1054px) {
+                top:420px;
+                left:0px;
+                width:365px;
 
               }
+              @media screen and (max-width: $break-small) {
+                  top:130px;
+                  left:190px;
+                  width:220px;
+                  
+                }
+            @media screen and (max-width:480px) {
+            top:255px;
+            left:70px;
+            width:215px;
+            }
         }
         &__intro{
             color:$main-mutedYellow;
