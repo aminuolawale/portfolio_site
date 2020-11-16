@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <Helmet>
-        <title>Aminu Olawale - Software Engier</title>
+        <title>Aminu Olawale - Software Engineer</title>
       </Helmet>
       <Layout>
         <Home></Home>
