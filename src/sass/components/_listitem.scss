@@ -1,0 +1,11 @@
+.listItem {
+    font-size: inherit;
+    display:flex;
+    align-items: flex-start;
+    justify-content: left;
+    margin-bottom: 10px;
+    &__icon {
+        margin-right: 5px;
+        padding-top: 5px;
+    }
+}

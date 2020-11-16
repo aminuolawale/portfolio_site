@@ -1,7 +1,6 @@
 import React from "react";
-import Button from "../components/Buttons";
-import chevronRight from "../img/chevron-right.png";
 import { animateScroll } from "react-scroll";
+import ListItem from "../components/ListItem";
 const About = () => {
   return (
     <div className="about">
@@ -41,50 +40,14 @@ const About = () => {
           </div>
           <div className="about__content__text__techs">
             <ul>
-              <li>
-                <img
-                  className="about__content__text__techs__listIcon"
-                  src={chevronRight}
-                ></img>
-                Python
-              </li>
-              <li>
-                <img
-                  className="about__content__text__techs__listIcon"
-                  src={chevronRight}
-                ></img>
-                Typescript
-              </li>
-              <li>
-                <img
-                  className="about__content__text__techs__listIcon"
-                  src={chevronRight}
-                ></img>
-                Nodejs
-              </li>
+              <ListItem>Python</ListItem>
+              <ListItem>Typescript</ListItem>
+              <ListItem>Nodejs</ListItem>
             </ul>
             <ul>
-              <li>
-                <img
-                  className="about__content__text__techs__listIcon"
-                  src={chevronRight}
-                ></img>
-                Javascript
-              </li>
-              <li>
-                <img
-                  className="about__content__text__techs__listIcon"
-                  src={chevronRight}
-                ></img>
-                React
-              </li>
-              <li>
-                <img
-                  className="about__content__text__techs__listIcon"
-                  src={chevronRight}
-                ></img>
-                Docker
-              </li>
+              <ListItem>Javascript</ListItem>
+              <ListItem>React</ListItem>
+              <ListItem>Docker</ListItem>
             </ul>
           </div>
         </div>

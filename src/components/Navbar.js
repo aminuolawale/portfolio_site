@@ -17,7 +17,12 @@ const Navbar = () => {
         >
           About
         </li>
-        <li className="navbar__links__item">Experience</li>
+        <li
+          className="navbar__links__item"
+          onClick={() => animateScroll.scrollTo(1640)}
+        >
+          Experience
+        </li>
         <li className="navbar__links__item">Work</li>
         <li className="navbar__links__item">Contact</li>
         <li className="navbar__links__item">
