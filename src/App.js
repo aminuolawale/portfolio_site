@@ -5,6 +5,7 @@ import About from "./containers/about";
 import { Helmet } from "react-helmet";
 import WorkExperience from "./containers/workExperience";
 import Projects from "./containers/projects";
+import OtherProjects from "./containers/otherProjects";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <About></About>
         <WorkExperience></WorkExperience>
         <Projects></Projects>
+        <OtherProjects></OtherProjects>
       </Layout>
     </div>
   );
