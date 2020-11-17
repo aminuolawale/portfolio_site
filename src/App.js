@@ -4,6 +4,7 @@ import "./sass/main.scss";
 import About from "./containers/about";
 import { Helmet } from "react-helmet";
 import WorkExperience from "./containers/workExperience";
+import Projects from "./containers/projects";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Home></Home>
         <About></About>
         <WorkExperience></WorkExperience>
+        <Projects></Projects>
       </Layout>
     </div>
   );

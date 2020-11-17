@@ -1,0 +1,72 @@
+.projects {
+    &__header {
+        display:flex;
+        align-items: center;
+        justify-content: left;
+        width:1200px;
+        margin-bottom: 30px;
+        &>h3 {
+            color:$main-orange;
+            font-size: $md-font;
+            margin-right: 50px;
+        }
+        &__rule {
+            background:$main-yellow;
+            height:1px;
+            width:500px;
+        }
+    }
+    &__content {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        position:relative;
+        &>div:nth-child(1){
+            width:80%;
+        }
+        &__header {
+            color:$main-mutedYellow;
+            &>p{
+                font-size: $xsm-font;
+                margin-bottom: 10px;
+            }
+            &>h4 {
+                font-size: $md-font;
+            }
+            margin-bottom: 180px;
+        }
+        &__detail {
+            color:$main-mutedYellow;
+            width: 600px;
+            margin-bottom: 30px;
+            position:absolute;
+            top:155px;
+            background:$main-dark;
+            padding: 20px 20px 20px 40px;
+            font-size: $sm-font;
+
+        }
+
+        &__techs {
+            display:flex;
+            &>li {
+                color:$main-orange;
+                font-size: $xsm-font;
+                margin-right: 20px;
+                margin-bottom: 20px;
+            }
+        }
+        &__links {
+            display:flex;
+            &>li {
+                margin-right: 20px;
+            }
+        }
+        &__image {
+            &>img{
+                object-fit: contain;
+                width:100%;
+            }
+        }
+    }
+}
