@@ -25,7 +25,7 @@ const Home = () => {
       </div>
       <div className="hero__image">
         <GlitchClip duration="10s">
-          <img src={abstract}></img>
+          <img src={abstract} alt="abstract"></img>
         </GlitchClip>
       </div>
     </div>

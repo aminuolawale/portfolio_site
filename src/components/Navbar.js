@@ -1,5 +1,4 @@
 import React from "react";
-import abstract from "../img/abstract.png";
 import mainLogo from "../img/main-logo.png";
 import Button from "./Buttons";
 import { animateScroll } from "react-scroll";

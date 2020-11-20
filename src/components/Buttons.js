@@ -3,7 +3,7 @@ import React from "react";
 const Button = ({ text, size, action }) => {
   return (
     <a
-      hfre="#!"
+      href="#!"
       className={`button button--${size} button--default`}
       onClick={action}
     >

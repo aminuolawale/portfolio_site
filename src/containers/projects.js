@@ -33,15 +33,15 @@ const Projects = () => {
           </ul>
           <ul className="projects__content__links">
             <li>
-              <img src={githubLogo}></img>
+              <img src={githubLogo} alt="logo"></img>
             </li>
             <li>
-              <img src={externalIcon} />
+              <img src={externalIcon} alt="logo" />
             </li>
           </ul>
         </div>
         <div className="projects__content__image">
-          <img src={hotelShowcase}></img>
+          <img src={hotelShowcase} alt="logo"></img>
         </div>
       </div>
       <div className="projects__content">
@@ -63,15 +63,15 @@ const Projects = () => {
           </ul>
           <ul className="projects__content__links">
             <li>
-              <img src={githubLogo}></img>
+              <img src={githubLogo} alt="logo"></img>
             </li>
             <li>
-              <img src={externalIcon} />
+              <img src={externalIcon} alt="logo" />
             </li>
           </ul>
         </div>
         <div className="projects__content__image">
-          <img src={homeBlissShowcase}></img>
+          <img src={homeBlissShowcase} alt="logo"></img>
         </div>
       </div>
     </div>

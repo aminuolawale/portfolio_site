@@ -42,7 +42,7 @@ const WorkExperience = () => {
         </div>
         <div
           className={`workExperience__content__view ${
-            view != "sendbox" ? "hide" : ""
+            view !== "sendbox" ? "hide" : ""
           }`}
         >
           <div className="workExperience__content__view__header">
@@ -74,7 +74,7 @@ const WorkExperience = () => {
         </div>
         <div
           className={`workExperience__content__view ${
-            view != "mindmantle" ? "hide" : ""
+            view !== "mindmantle" ? "hide" : ""
           }`}
         >
           <div className="workExperience__content__view__header">
@@ -98,7 +98,7 @@ const WorkExperience = () => {
         </div>
         <div
           className={`workExperience__content__view ${
-            view != "dammac" ? "hide" : ""
+            view !== "dammac" ? "hide" : ""
           }`}
         >
           <div className="workExperience__content__view__header">
