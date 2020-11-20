@@ -7,13 +7,13 @@ const ProjectCard = (props) => {
   return (
     <div className="projectCard">
       <div className="projectCard__top">
-        <img src={openedFolder}></img>
+        <img src={openedFolder} alt="opened-folder"></img>
         <ul>
           <li>
-            <img src={githubLogo}></img>
+            <img src={githubLogo} alt="github"></img>
           </li>
           <li>
-            <img src={externalIcon}></img>
+            <img src={externalIcon} alt="goto"></img>
           </li>
         </ul>
       </div>
@@ -21,7 +21,7 @@ const ProjectCard = (props) => {
       <p className="projectCard__text">{props.text}</p>
       <ul className="projectCard__tools">
         {props.tools.map((tool) => (
-          <li>{tool}</li>
+          <li key={tool}>{tool}</li>
         ))}
       </ul>
     </div>
