@@ -40,77 +40,83 @@ const WorkExperience = () => {
             </li>
           </ul>
         </div>
-        {view === "sendbox" && (
-          <div className="workExperience__content__view">
-            <div className="workExperience__content__view__header">
-              <h4>
-                Software Engineer <span>@Sendbox</span>
-              </h4>
-              <p>Dec 2019 - present</p>
-            </div>
-            <div className="workExperience__content__view__content">
-              <ul>
-                <ListItem>
-                  Developed and maintained the firm’s core infrastructure and
-                  services
-                </ListItem>
-                <ListItem>
-                  Carried out Data analytics and reporting on the firm’s
-                  financial performance.
-                </ListItem>
-                <ListItem>
-                  Implemented a realtime monitoring system for the firm's
-                  logistics services.
-                </ListItem>
-                <ListItem>
-                  Developed inhouse tools to speed up product development
-                  life-cycles.
-                </ListItem>
-              </ul>
-            </div>
+        <div
+          className={`workExperience__content__view ${
+            view != "sendbox" ? "hide" : ""
+          }`}
+        >
+          <div className="workExperience__content__view__header">
+            <h4>
+              Software Engineer <span>@Sendbox</span>
+            </h4>
+            <p>Dec 2019 - present</p>
           </div>
-        )}
-        {view === "mindmantle" && (
-          <div className="workExperience__content__view">
-            <div className="workExperience__content__view__header">
-              <h4>
-                3D Animator <span>@Mindmantle</span>
-              </h4>
-              <p>Jan 2018 - Oct 2019</p>
-            </div>
-            <div className="workExperience__content__view__content">
-              <ul>
-                <ListItem>
-                  Created digital assets for short animated features, games and
-                  adverts
-                </ListItem>
-                <ListItem>
-                  Developed plugins in Maya Embedded Language and Python for
-                  production pipeline enhancement
-                </ListItem>
-              </ul>
-            </div>
+          <div className="workExperience__content__view__content">
+            <ul>
+              <ListItem>
+                Developed and maintained the firm’s core infrastructure and
+                services
+              </ListItem>
+              <ListItem>
+                Carried out Data analytics and reporting on the firm’s financial
+                performance.
+              </ListItem>
+              <ListItem>
+                Implemented a realtime monitoring system for the firm's
+                logistics services.
+              </ListItem>
+              <ListItem>
+                Developed inhouse tools to speed up product development
+                life-cycles.
+              </ListItem>
+            </ul>
           </div>
-        )}
-        {view === "dammac" && (
-          <div className="workExperience__content__view">
-            <div className="workExperience__content__view__header">
-              <h4>
-                Tech Operations Intern <span>@Dammac Global</span>
-              </h4>
-              <p>May 2016 - Dec 2016</p>
-            </div>
-            <div className="workExperience__content__view__content">
-              <ul>
-                <ListItem>
-                  Installation and maintenance of telephony equipment at
-                  Transmission stations.
-                </ListItem>
-                <ListItem>Inventory management</ListItem>
-              </ul>
-            </div>
+        </div>
+        <div
+          className={`workExperience__content__view ${
+            view != "mindmantle" ? "hide" : ""
+          }`}
+        >
+          <div className="workExperience__content__view__header">
+            <h4>
+              3D Animator <span>@Mindmantle</span>
+            </h4>
+            <p>Jan 2018 - Oct 2019</p>
           </div>
-        )}
+          <div className="workExperience__content__view__content">
+            <ul>
+              <ListItem>
+                Created digital assets for short animated features, games and
+                adverts
+              </ListItem>
+              <ListItem>
+                Developed plugins in Maya Embedded Language and Python for
+                production pipeline enhancement
+              </ListItem>
+            </ul>
+          </div>
+        </div>
+        <div
+          className={`workExperience__content__view ${
+            view != "dammac" ? "hide" : ""
+          }`}
+        >
+          <div className="workExperience__content__view__header">
+            <h4>
+              Tech Operations Intern <span>@Dammac Global</span>
+            </h4>
+            <p>May 2016 - Dec 2016</p>
+          </div>
+          <div className="workExperience__content__view__content">
+            <ul>
+              <ListItem>
+                Installation and maintenance of telephony equipment at
+                Transmission stations.
+              </ListItem>
+              <ListItem>Inventory management</ListItem>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );

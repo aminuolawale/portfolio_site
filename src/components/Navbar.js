@@ -19,12 +19,22 @@ const Navbar = () => {
         </li>
         <li
           className="navbar__links__item"
-          onClick={() => animateScroll.scrollTo(1640)}
+          onClick={() => animateScroll.scrollTo(1585)}
         >
           Experience
         </li>
-        <li className="navbar__links__item">Work</li>
-        <li className="navbar__links__item">Contact</li>
+        <li
+          className="navbar__links__item"
+          onClick={() => animateScroll.scrollTo(2485)}
+        >
+          Projects
+        </li>
+        <li
+          className="navbar__links__item"
+          onClick={() => animateScroll.scrollTo(4600)}
+        >
+          Contact
+        </li>
         <li className="navbar__links__item">
           <Button text="Resume" size="sm"></Button>
         </li>

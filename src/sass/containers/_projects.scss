@@ -6,15 +6,36 @@
         justify-content: left;
         width:1200px;
         margin-bottom: 30px;
+        @media screen and (max-width: $break-large) {
+            width:100%;
+        }
+        @media screen and (max-width: $break-small) {
+            display:block;
+            width:100%;
+        }
         &>h3 {
             color:$main-orange;
             font-size: $md-font;
             margin-right: 50px;
+            &:hover{
+                cursor:pointer;
+                color:$main-yellow;
+            }
+            @media screen and (max-width: $break-small) {
+                text-align: center;
+                margin-right: 0;
+            }
         }
         &__rule {
             background:$main-yellow;
             height:1px;
             width:500px;
+            @media screen and (max-width: $break-large) {
+                width:50%;
+            }
+            @media screen and (max-width: $break-small) {
+                display:none;
+            }
         }
     }
     &__content {
@@ -23,11 +44,18 @@
         justify-content: center;
         position:relative;
         margin-bottom: 100px;
+        @media screen and (max-width: $break-small) {
+            margin-bottom: 50px;
+        }
         &>div:nth-child(1){
             width:80%;
         }
         &__header {
             color:$main-mutedYellow;
+            @media screen and (max-width: $break-small) {
+                margin-bottom: 10px;
+                text-align: center;
+            }
             &>p{
                 font-size: $xsm-font;
                 margin-bottom: 10px;
@@ -46,6 +74,16 @@
             background:$main-dark;
             padding: 20px 20px 20px 40px;
             font-size: $sm-font;
+            @media screen and (max-width: $break-large) {
+                top:75px;
+            }
+            @media screen and (max-width: $break-small) {
+                position:relative;
+                width:100%;
+                top:0;
+                padding:0;
+                font-size: $xsm-font;
+            }
 
         }
 
@@ -60,14 +98,26 @@
         }
         &__links {
             display:flex;
+              @media screen and (max-width: $break-small) {
+                width:40%;
+                margin:auto;
+                align-items: center;
+                justify-content: space-around;
+            }
             &>li {
                 margin-right: 20px;
+                @media screen and (max-width: $break-small) {
+                    margin-right: 0px;
+                }
             }
         }
         &__image {
             &>img{
                 object-fit: contain;
                 width:100%;
+                @media screen and (max-width: $break-small) {
+                    display:none;
+                }
             }
         }
     }

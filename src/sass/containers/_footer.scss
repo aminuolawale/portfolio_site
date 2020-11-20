@@ -2,4 +2,10 @@
     text-align: center;
     color:$main-mutedYellow;
     font-size: $xsm-font;
+    &__text{
+        margin-bottom: 10px;
+        &>span{
+            color:$main-yellow;
+        }
+    }
 }

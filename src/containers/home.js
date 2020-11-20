@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../components/Buttons";
 import abstract from "../img/abstract.png";
 import GlitchClip from "react-glitch-effect/core/Clip";
+import { animateScroll } from "react-scroll";
 const Home = () => {
   return (
     <div className="hero">
@@ -15,7 +16,11 @@ const Home = () => {
           developing and maintaining web/mobile apps, API’s, and microservices.
         </p>
         <div className="hero__text__button">
-          <Button text="Get in touch" size="md"></Button>
+          <Button
+            text="Get in touch"
+            size="md"
+            action={() => animateScroll.scrollTo(4600)}
+          ></Button>
         </div>
       </div>
       <div className="hero__image">

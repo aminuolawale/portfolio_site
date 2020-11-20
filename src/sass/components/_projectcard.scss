@@ -2,6 +2,9 @@
     border: 1px solid $main-yellow;
     height:320px;
     padding:20px;
+    @media screen and (max-width: $break-small) {
+        margin-bottom: 20px;
+    }
     &__top{
         display:flex;
         align-items: center;
@@ -23,6 +26,13 @@
         color:$main-mutedYellow;
         font-size: $sm-font;
         margin-bottom: 50px;
+        @media screen and (max-width: $break-large) {
+            font-size: $xsm-font;
+        }
+        @media screen and (max-width: $break-small) {
+            font-size: $xsm-font;
+        }
+
     }
     &__tools{
         color:$main-mutedYellow;

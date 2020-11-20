@@ -2,15 +2,28 @@
     width:700px;
     margin:auto;
     margin-bottom: 200px;
+    @media screen and (max-width: $break-large) {
+        width:100%;
+    }
+    @media screen and (max-width: $break-small) {
+        margin-bottom: 400px;
+    }
     &__header {
         display:flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 40px;
         width:800px;
+        @media screen and (max-width: $break-large) {
+            display:block;
+            width:100%;
+        }
         &>h3{
             color:$main-orange;
             font-size: $md-font;
+            @media screen and (max-width: $break-large) {
+                text-align: center;
+            }
             &:hover {
                 color:$main-yellow;
                 cursor:pointer;
@@ -20,6 +33,9 @@
             height:1px;
             background:$main-yellow;
             width: 530px;
+            @media screen and (max-width: $break-large) {
+                display:none;
+            }
         }
     }
 
@@ -28,22 +44,48 @@
         align-items: flex-start;
         width:800px;
         height:400px;
+        @media screen and (max-width: $break-large) {
+            display:block;
+            width:100%;    
+        }
         &__menu {
             color:$main-orange;
             width:300px;
             margin-top: -15px;
             position:relative;
-
+            @media screen and (max-width: $break-large) {
+                width:100%;
+                margin-bottom: 20px;
+            }
+            @media screen and (max-width: $break-small) {
+                display:none;
+            }
+            &>ul{
+                @media screen and (max-width: $break-large) {
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
             &__border {
                 height:182px;
                 width:1px;
                 background:$main-yellow;
                 position:absolute;
                 left: 2.5px;
+                @media screen and (max-width: $break-large) {
+                    width:100%;
+                    height:1px;
+                    top: 2px;
+                }
             }
 
             &__listItem {
                 padding:20px 0 20px 20px;
+                @media screen and (max-width: $break-large) {
+                    text-align: center;
+                    padding:20px 20px 20px 20px;
+                }
                 &:hover {
                     cursor:pointer;
                 }
@@ -53,6 +95,12 @@
         &__view {
             color:$main-mutedYellow;
             width:600px;
+            @media screen and (max-width: $break-large) {
+                width:100%;
+            }
+            @media screen and (max-width: $break-small) {
+                margin-bottom: 40px;
+            }
             &__header {
                 &>h4 {
                     font-size: $md-font;
@@ -61,8 +109,18 @@
                 &>p {
                     font-size: $sm-font;
                     margin-bottom: 20px;
+                    @media screen and (max-width: $break-small) {
+                        font-size: $xsm-font;
+                    }
 
                 }
+            }
+            &__content{
+                font-size: $sm-font;
+                @media screen and (max-width: $break-small) {
+                    font-size: $xsm-font;
+                }
+
             }
         }
     }
@@ -76,5 +134,18 @@ span {
     color:$main-yellow;
     border-left: 5px solid $main-yellow;
     padding:20px 0 20px 15px;
+    @media screen and (max-width: $break-large) {
+        border-top: 5px solid $main-yellow;
+        border-left: none;
+        padding:15px 20px 20px 20px;
 
+    }
+
+}
+
+.hide {
+    display:none;
+    @media screen and (max-width: $break-small) {
+        display:block;
+    }
 }
