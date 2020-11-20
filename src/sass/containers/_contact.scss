@@ -1,0 +1,22 @@
+.contact {
+    margin-bottom: 200px;
+    &__header {
+        color:$main-yellow;
+        font-size: $md-font;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__text {
+        color:$main-mutedYellow;
+        font-size:$sm-font;
+        text-align: center;
+        width:50%;
+        margin:auto;
+        margin-bottom: 50px;
+    }
+    &__button{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

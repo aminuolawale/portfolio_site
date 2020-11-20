@@ -6,6 +6,8 @@ import { Helmet } from "react-helmet";
 import WorkExperience from "./containers/workExperience";
 import Projects from "./containers/projects";
 import OtherProjects from "./containers/otherProjects";
+import Contact from "./containers/contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <WorkExperience></WorkExperience>
         <Projects></Projects>
         <OtherProjects></OtherProjects>
+        <Contact></Contact>
+        <Footer></Footer>
       </Layout>
     </div>
   );
