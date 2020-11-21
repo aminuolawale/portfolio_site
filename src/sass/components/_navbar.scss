@@ -2,10 +2,17 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
+    position:sticky;
+    background:$main-dark;
+    z-index: 4;
+    top:0;
     &__header {
         height:100px;
         display:flex;
         align-items: center;
+        &:hover{
+            cursor:pointer;
+        }
         @media screen and (max-width: $break-small) {
             display:flex;
             align-items: center;
@@ -39,4 +46,8 @@
     @media screen and (max-width: $break-small) {
         display:block;
       }
+}
+
+.focus{
+    color:$main-orange;
 }

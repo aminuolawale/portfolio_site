@@ -10,43 +10,38 @@ const About = () => {
       </div>
       <div className="about__content">
         <div className="about__content__image">
-          <div className="about__content__image__imageBorder"></div>
           <div className="about__content__image__img"></div>
+          <div className="about__content__image__imageBorder"></div>
         </div>
         <div className="about__content__text">
           <div className="about__content__text__p">
             <p>
-              Hello! I am Aminu Mohammed, a Software Engineer based in Lagos,
+              Hi I am Aminu Olawale, a Software Engineer based in Lagos,
               Nigeria.
             </p>
             <p>
-              I have a passion for software and spend most of my time building
-              software or tinkering with the ones that pique my interest. I
-              mostly develop and maintain web and mobile applications and while
-              I am not working, I enjoy reading science non-fiction books and
-              some philosophy.
-            </p>
-            <p>
-              I graduated from the University of Lagos, Nigeria, and after
-              working as a motion graphics artist and 3D Animator for a while I
-              joined the dev team at Sendbox where I develop and maintain an
-              e-commerce and logistics platform used by tens of thousands of
-              users daily.
+              I love making cool things with computers. I started out as a 3D
+              Animator making short animated films and adverts and got drawn
+              into the world of software engineering, particularly game
+              development. The web grew on me and I soon found myself building
+              and deploying web applications. I love the dynamism and speed of
+              evolution of web technologies and I find it exciting to always
+              have something new to learn everyday.
             </p>
             <p>
               Below is the current snapshot of the ever-growing list of tools
-              and technology I work with:
+              and technologies I work with:
             </p>
           </div>
           <div className="about__content__text__techs">
             <ul>
               <ListItem>Python</ListItem>
-              <ListItem>Typescript</ListItem>
+              <ListItem>Javascript/Typescript</ListItem>
               <ListItem>Nodejs</ListItem>
             </ul>
             <ul>
-              <ListItem>Javascript</ListItem>
-              <ListItem>React</ListItem>
+              <ListItem>React/React-Native</ListItem>
+              <ListItem>Golang</ListItem>
               <ListItem>Docker</ListItem>
             </ul>
           </div>

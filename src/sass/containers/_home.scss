@@ -9,28 +9,28 @@
         z-index: 3;
         &__accent {
             height:10px;
-            width:300px;
+            width:380px;
             background:$main-red;
             position:absolute;
-            top:315px;
-            left:315px;
+            top:330px;
+            left:300px;
             z-index: -1;
-              @media screen and (max-width:1054px) {
-                top:420px;
-                left:0px;
-                width:365px;
+            @media screen and (max-width:1132px) {
+              top:441px;
+              left:0px;
+              width:400px;
 
+            }
+            @media screen and (max-width: $break-small) {
+                top:130px;
+                left:190px;
+                width:220px;
+                
               }
-              @media screen and (max-width: $break-small) {
-                  top:130px;
-                  left:190px;
-                  width:220px;
-                  
-                }
             @media screen and (max-width:480px) {
-            top:255px;
-            left:70px;
-            width:215px;
+            top:270px;
+            left:45px;
+            width:240px;
             }
         }
         &__intro{

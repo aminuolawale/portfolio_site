@@ -6,7 +6,7 @@
         width:100%;
     }
     @media screen and (max-width: $break-small) {
-        margin-bottom: 400px;
+        margin-bottom: 450px;
     }
     &__header {
         display:flex;
@@ -17,6 +17,9 @@
         @media screen and (max-width: $break-large) {
             display:block;
             width:100%;
+        }
+        @media screen and (max-width: $break-small) {
+            margin-bottom: 20px;
         }
         &>h3{
             color:$main-orange;
@@ -105,6 +108,7 @@
                 &>h4 {
                     font-size: $md-font;
                     margin-bottom: 10px;
+                    color:$main-yellow;
                 }
                 &>p {
                     font-size: $sm-font;

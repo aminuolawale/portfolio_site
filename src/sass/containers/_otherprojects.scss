@@ -10,6 +10,10 @@
             color:$main-orange;
             font-size: $md-font;
             margin-bottom: 20px;
+            &:hover {
+                cursor:pointer;
+                color:$main-yellow;
+            }
         }
         &>p{
             color:$main-mutedYellow;

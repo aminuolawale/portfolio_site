@@ -7,7 +7,7 @@ const WorkExperience = () => {
   return (
     <div className="workExperience">
       <div className="workExperience__header">
-        <h3 onClick={() => animateScroll.scrollTo(0)}>Where I have worked</h3>
+        <h3 onClick={() => animateScroll.scrollTo(0)}>Work Experience</h3>
         <div className="workExperience__header__rule"></div>
       </div>
       <div className="workExperience__content">

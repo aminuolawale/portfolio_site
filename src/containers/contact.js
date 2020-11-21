@@ -14,6 +14,11 @@ const Contact = () => {
         try my best to get back to you!
       </p>
       <div className="contact__button">
+        <ul>
+          <li>twitter</li>
+          <li>linkedin</li>
+          <li>github</li>
+        </ul>
         <Button text="Say hello" size="md"></Button>
       </div>
     </div>

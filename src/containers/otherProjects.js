@@ -1,12 +1,15 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import Button from "../components/Buttons";
+import { animateScroll } from "react-scroll";
 
 const OtherProjects = () => {
   return (
     <div className="otherProjects">
       <div className="otherProjects__header">
-        <h3>Other Noteworthy Projects</h3>
+        <h3 onClick={() => animateScroll.scrollTo(0)}>
+          Other Noteworthy Projects
+        </h3>
         <p>View the archive</p>
       </div>
       <div className="otherProjects__grid">

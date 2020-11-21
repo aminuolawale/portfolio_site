@@ -12,8 +12,8 @@ const Home = () => {
         <h1 className="hero__text__main">Aminu Olawale.</h1>
         <p className="hero__text__sub">I build software.</p>
         <p className="hero__text__p">
-          I am a Software Engineer based in Lagos, Nigeria specialized in
-          developing and maintaining web/mobile apps, API’s, and microservices.
+          I am a Software Engineer based in Lagos, Nigeria. I develop and
+          maintain web and mobile apps, API’s, and microservices.
         </p>
         <div className="hero__text__button">
           <Button
@@ -24,8 +24,8 @@ const Home = () => {
         </div>
       </div>
       <div className="hero__image">
-        <GlitchClip duration="10s">
-          <img src={abstract} alt="abstract"></img>
+        <GlitchClip onHover={true}>
+          <img src={abstract} alt="abstractw"></img>
         </GlitchClip>
       </div>
     </div>
