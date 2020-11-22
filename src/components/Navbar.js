@@ -38,6 +38,7 @@ const Navbar = () => {
       setDropdownActive(false);
     }
   };
+  console.log(focus);
   useEffect(() => {
     if (dropdownActive) {
       console.log("activated");

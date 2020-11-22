@@ -1,7 +1,6 @@
 import React from "react";
-import Button from "../components/Buttons";
 import { animateScroll } from "react-scroll";
-import { FaGithub, FaLinkedinIn, FaTwitter, FaPhone } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import PhoneNumber from "react-phone-number";
 const Contact = () => {
