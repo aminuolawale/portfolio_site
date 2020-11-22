@@ -49,6 +49,9 @@
     &__toggler {
         display:none;
         color:$main-orange;
+        &:hover{
+            cursor:pointer;
+        }
         @media screen and (max-width: $break-small) {
             display:block;
         }
@@ -70,16 +73,17 @@
         right:0px;
         background:$main-dark;
         border: .5px solid  rgba(237, 211, 130, .5) ;
-        height:156px;
+        height:216px;
     }
     &>li{
         @media screen and (max-width: $break-small) {
-            padding: 5px 10px;
+            padding: 10px 20px;
         }
     }
     &>li:last-child{
         @media screen and (max-width: $break-small) {
-            padding: 10px 0px;
+            padding: 20px 0px;
+            text-align: center;
         }
     }
 }

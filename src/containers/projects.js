@@ -9,9 +9,7 @@ const Projects = () => {
   return (
     <div className="projects">
       <div className="projects__header">
-        <h3 onClick={() => animateScroll.scrollTo(0)}>
-          Some things I have built
-        </h3>
+        <h3 onClick={() => animateScroll.scrollTo(0)}>Projects</h3>
         <div className="projects__header__rule"></div>
       </div>
       <div className="projects__content">

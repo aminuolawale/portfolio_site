@@ -36,7 +36,7 @@ const About = () => {
           <div className="about__content__text__techs">
             <ul>
               <ListItem>Python</ListItem>
-              <ListItem>Javascript/Typescript</ListItem>
+              <ListItem>Javascript</ListItem>
               <ListItem>Nodejs</ListItem>
             </ul>
             <ul>

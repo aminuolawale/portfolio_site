@@ -4,47 +4,59 @@ import Button from "./Buttons";
 import { animateScroll } from "react-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
-  const [focus, setFocus] = useState("home");
   const [dropdownActive, setDropdownActive] = useState(false);
 
-  const homeScroll = () => {
+  useEffect(() => {
     animateScroll.scrollTo(0);
-    setFocus("home");
+  }, []);
+
+  const isSmall = () => window.innerWidth <= 600;
+  const homeScroll = () => {
+    if (window.innerHeight) animateScroll.scrollTo(0);
   };
 
   const aboutScroll = () => {
-    animateScroll.scrollTo(840);
-    setFocus("about");
+    if (isSmall()) {
+      animateScroll.scrollTo(540);
+    } else {
+      animateScroll.scrollTo(840);
+    }
   };
 
   const experienceScroll = () => {
-    animateScroll.scrollTo(1685);
-    setFocus("experience");
+    if (isSmall()) {
+      animateScroll.scrollTo(1400);
+    } else {
+      animateScroll.scrollTo(1685);
+    }
   };
 
   const projectsScroll = () => {
-    animateScroll.scrollTo(2535);
-    setFocus("projects");
+    if (isSmall()) {
+      animateScroll.scrollTo(2310);
+    } else {
+      animateScroll.scrollTo(2535);
+    }
   };
 
   const contactScroll = () => {
-    animateScroll.scrollTo(4600);
-    setFocus("contact");
+    if (isSmall()) {
+      animateScroll.scrollTo(5200);
+    } else {
+      animateScroll.scrollTo(4600);
+    }
   };
   const responsiveHandler = (e) => {
-    console.log(e.target);
     const nav = document.querySelector(".navbar__links");
-    if (!nav.contains(e.target)) {
+    const toggler = document.querySelector(".navbar__toggler");
+    if (!nav.contains(e.target) && !toggler.contains(e.target)) {
       setDropdownActive(false);
     }
   };
-  console.log(focus);
   useEffect(() => {
     if (dropdownActive) {
-      console.log("activated");
       document.addEventListener("click", responsiveHandler);
     } else {
-      console.log("deactivated");
       document.removeEventListener("click", responsiveHandler);
     }
   }, [dropdownActive]);
