@@ -12,14 +12,27 @@
     &--md{
         font-size:$md-font;
         padding:20px 24px;
+        @media screen and (max-width: $break-small) {
+            font-size:$sm-font;
+            padding:12px 20px;
+        }
     }
     &--lg{
         font-size:$lg-font;
         padding:24px 30px;
+        @media screen and (max-width: $break-small) {
+            padding:20px 24px;
+            font-size:$md-font;
+        }
     }
     &--xlg{
         font-size:$xlg-font;
         padding:30px 40px;
+        @media screen and (max-width: $break-small) {
+            padding:24px 30px;
+            font-size:$lg-font;
+
+        }
     }
 
     &--default {

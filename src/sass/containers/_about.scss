@@ -87,6 +87,12 @@
                 border: 1px solid $main-orange;
                 height: 360px;
                 width: 360px;
+                &:hover {
+                    background:$main-orange;
+                }
+                @media screen and (max-width: $break-small) {
+                    display:none;
+                }
             }
             &__img {
                 position:absolute;
@@ -98,6 +104,9 @@
                 @media screen and (max-width: $break-small) {
                     top:0px;
                     left: 0px;
+                    position:relative;
+                    width:320px;
+                    height:320px;
                   }
             }
         }

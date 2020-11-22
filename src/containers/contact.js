@@ -1,25 +1,46 @@
 import React from "react";
 import Button from "../components/Buttons";
 import { animateScroll } from "react-scroll";
-
+import { FaGithub, FaLinkedinIn, FaTwitter, FaPhone } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
+import PhoneNumber from "react-phone-number";
 const Contact = () => {
   return (
     <div className="contact">
       <h3 className="contact__header" onClick={() => animateScroll.scrollTo(0)}>
-        Get In Touch
+        Contact me
       </h3>
       <p className="contact__text">
-        Although I'm not currently looking for any new opportunities, my inbox
-        is always open. Whether you have a question or just want to say hi, I'll
-        try my best to get back to you!
+        Feel free to contact me through any of these channels. I'll make sure to
+        get back to you.
       </p>
-      <div className="contact__button">
-        <ul>
-          <li>twitter</li>
-          <li>linkedin</li>
-          <li>github</li>
+      <div>
+        <ul className="contact__links">
+          <li className="contact__links__item ">
+            {/* <FaPhone size="50px"></FaPhone> */}
+            <PhoneNumber number="+2348111279627" isLinked={true} />
+          </li>
+          <li className="contact__links__item">
+            <a href={"mailto:aminuolawalekan@gmail.com"}>
+              <FiMail size="50px"></FiMail>
+            </a>
+          </li>
+          <li className="contact__links__item">
+            <a href="https://github.com/aminuolawale">
+              <FaGithub size="50px"></FaGithub>
+            </a>
+          </li>
+          <li className="contact__links__item">
+            <a href="https://www.linkedin.com/in/mohammed-aminu-b94468195">
+              <FaLinkedinIn size="50px"></FaLinkedinIn>
+            </a>
+          </li>
+          <li className="contact__links__item">
+            <a href="https://twitter.com/aminuolawalekan">
+              <FaTwitter size="50px"></FaTwitter>
+            </a>
+          </li>
         </ul>
-        <Button text="Say hello" size="md"></Button>
       </div>
     </div>
   );

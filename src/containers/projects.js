@@ -26,9 +26,9 @@ const Projects = () => {
             that will last long enough for a hotel to prove too expensive.
           </p>
           <ul className="projects__content__techs">
-            <li>Gatsby</li>
-            <li>Figma</li>
             <li>Reactjs</li>
+            <li>Firebase</li>
+            <li>Figma</li>
             <li>Places API</li>
           </ul>
           <ul className="projects__content__links">
@@ -51,9 +51,7 @@ const Projects = () => {
             <h4>Homebliss</h4>
           </div>
           <p className="projects__content__detail">
-            UI and mockups for an application/web service that eases the process
-            of relocating to new place or finding somwhere to stay during a trip
-            that will last long enough for a hotel to prove too expensive.
+            UI and mockups for a home dispute resolution service.
           </p>
           <ul className="projects__content__techs">
             <li>Gatsby</li>

@@ -14,34 +14,34 @@ const OtherProjects = () => {
       </div>
       <div className="otherProjects__grid">
         <ProjectCard
-          title="Time to have more fun"
-          text="A single page web app for helping me choose where to travel, built with Next.js, Firebase, and Tailwind CSS"
-          tools={["Nextjs", "SASS", "Firebase"]}
+          title="Project Title"
+          text="A project description will go here soon. You can always come back to check"
+          tools={["Tool1", "Tool2", "Tool3"]}
         ></ProjectCard>
         <ProjectCard
-          title="Time to have more fun"
-          text="A single page web app for helping me choose where to travel, built with Next.js, Firebase, and Tailwind CSS"
-          tools={["Nextjs", "SASS", "Firebase"]}
+          title="Project Title"
+          text="A project description will go here soon. You can always come back to check"
+          tools={["Tool1", "Tool2", "Tool3"]}
         ></ProjectCard>
         <ProjectCard
-          title="Time to have more fun"
-          text="A single page web app for helping me choose where to travel, built with Next.js, Firebase, and Tailwind CSS"
-          tools={["Nextjs", "SASS", "Firebase"]}
+          title="Project Title"
+          text="A project description will go here soon. You can always come back to check"
+          tools={["Tool1", "Tool2", "Tool3"]}
         ></ProjectCard>
         <ProjectCard
-          title="Time to have more fun"
-          text="A single page web app for helping me choose where to travel, built with Next.js, Firebase, and Tailwind CSS"
-          tools={["Nextjs", "SASS", "Firebase"]}
+          title="Project Title"
+          text="A project description will go here soon. You can always come back to check"
+          tools={["Tool1", "Tool2", "Tool3"]}
         ></ProjectCard>
         <ProjectCard
-          title="Time to have more fun"
-          text="A single page web app for helping me choose where to travel, built with Next.js, Firebase, and Tailwind CSS"
-          tools={["Nextjs", "SASS", "Firebase"]}
+          title="Project Title"
+          text="A project description will go here soon. You can always come back to check"
+          tools={["Tool1", "Tool2", "Tool3"]}
         ></ProjectCard>
         <ProjectCard
-          title="Time to have more fun"
-          text="A single page web app for helping me choose where to travel, built with Next.js, Firebase, and Tailwind CSS"
-          tools={["Nextjs", "SASS", "Firebase"]}
+          title="Project Title"
+          text="A project description will go here soon. You can always come back to check"
+          tools={["Tool1", "Tool2", "Tool3"]}
         ></ProjectCard>
       </div>
       <div className="otherProjects__button">

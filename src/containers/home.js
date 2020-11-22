@@ -17,7 +17,7 @@ const Home = () => {
         </p>
         <div className="hero__text__button">
           <Button
-            text="Get in touch"
+            text="Contact Me"
             size="md"
             action={() => animateScroll.scrollTo(4600)}
           ></Button>

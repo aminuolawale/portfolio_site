@@ -29,12 +29,27 @@
         @media screen and (max-width: $break-small) {
             width:100%;
             font-size: $xsm-font;
-            margin-bottom: 3    0px;
+            margin-bottom: 30px;
         }
     }
-    &__button{
+    &__links{
         display:flex;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
+        @media screen and (max-width: $break-large) {
+            flex-direction: column;
+        }
+        &__item{
+            color:$main-orange;
+            margin:0 40px;
+            &:hover{
+                color:$main-red;
+                cursor:pointer;
+            }
+            @media screen and (max-width: $break-large) {
+                margin-bottom: 40px;
+            }
+        }     
     }
 }

@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import mainLogo from "../img/main-logo.png";
 import Button from "./Buttons";
 import { animateScroll } from "react-scroll";
-
+import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
   const [focus, setFocus] = useState("home");
+  const [dropdownActive, setDropdownActive] = useState(false);
 
   const homeScroll = () => {
     animateScroll.scrollTo(0);
@@ -30,16 +31,28 @@ const Navbar = () => {
     animateScroll.scrollTo(4600);
     setFocus("contact");
   };
-
+  const responsiveHandler = (e) => {
+    console.log(e.target);
+    const nav = document.querySelector(".navbar__links");
+    if (!nav.contains(e.target)) {
+      setDropdownActive(false);
+    }
+  };
   useEffect(() => {
-    console.log(window.pageYOffset);
-  }, [focus]);
+    if (dropdownActive) {
+      console.log("activated");
+      document.addEventListener("click", responsiveHandler);
+    } else {
+      console.log("deactivated");
+      document.removeEventListener("click", responsiveHandler);
+    }
+  }, [dropdownActive]);
   return (
     <div className="navbar">
       <div className="navbar__header" onClick={homeScroll}>
         <img src={mainLogo} alt="main-logo"></img>
       </div>
-      <ul className="navbar__links">
+      <ul className={`navbar__links ${dropdownActive ? "responsive" : ""}`}>
         <li className={`navbar__links__item`} onClick={aboutScroll}>
           About
         </li>
@@ -56,6 +69,12 @@ const Navbar = () => {
           <Button text="Resume" size="sm"></Button>
         </li>
       </ul>
+      <div
+        className="navbar__toggler"
+        onClick={() => setDropdownActive(!dropdownActive)}
+      >
+        <GiHamburgerMenu size="30px"></GiHamburgerMenu>
+      </div>
     </div>
   );
 };

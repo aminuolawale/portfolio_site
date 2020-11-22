@@ -69,12 +69,15 @@
         &__detail {
             color:$main-mutedYellow;
             width: 600px;
+            min-height: 140px;
             margin-bottom: 30px;
             position:absolute;
             top:155px;
             background:$main-dark;
             padding: 20px 20px 20px 40px;
             font-size: $sm-font;
+            display:flex;
+            align-items: center;
             @media screen and (max-width: $break-large) {
                 top:75px;
             }
@@ -84,6 +87,8 @@
                 top:0;
                 padding:0;
                 font-size: $xsm-font;
+                display:block;
+                text-align: center;
             }
 
         }

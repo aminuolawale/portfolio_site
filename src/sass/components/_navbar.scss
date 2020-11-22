@@ -6,6 +6,9 @@
     background:$main-dark;
     z-index: 4;
     top:0;
+    @media screen and (max-width: $break-small) {
+        width:100%;
+      }
     &__header {
         height:100px;
         display:flex;
@@ -16,7 +19,7 @@
         @media screen and (max-width: $break-small) {
             display:flex;
             align-items: center;
-            justify-content:center;
+            justify-content:flex-start;
             height:50px;
           }
 
@@ -43,11 +46,40 @@
             display:none;
           }
     }
-    @media screen and (max-width: $break-small) {
-        display:block;
-      }
+    &__toggler {
+        display:none;
+        color:$main-orange;
+        @media screen and (max-width: $break-small) {
+            display:block;
+        }
+    }
+   
 }
 
 .focus{
     color:$main-orange;
+}
+
+
+.responsive {
+    @media screen and (max-width: $break-small) {
+        position:absolute;
+        display:block;
+        font-size: $xsm-font;
+        top:50px;
+        right:0px;
+        background:$main-dark;
+        border: .5px solid  rgba(237, 211, 130, .5) ;
+        height:156px;
+    }
+    &>li{
+        @media screen and (max-width: $break-small) {
+            padding: 5px 10px;
+        }
+    }
+    &>li:last-child{
+        @media screen and (max-width: $break-small) {
+            padding: 10px 0px;
+        }
+    }
 }
