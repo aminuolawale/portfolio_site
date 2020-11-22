@@ -3,8 +3,8 @@ import Button from "../components/Buttons";
 import abstract from "../img/abstract.png";
 import GlitchClip from "react-glitch-effect/core/Clip";
 import { animateScroll } from "react-scroll";
+import { isSmall } from "../utils";
 const Home = () => {
-  const isSmall = () => window.innerWidth <= 600;
   const handleScroll = () => {
     if (isSmall()) {
       animateScroll.scrollTo(5500);

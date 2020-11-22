@@ -1,8 +1,10 @@
 .about {
     margin-bottom: 300px;
+
     @media screen and (max-width: $break-small) {
         margin-bottom: 100px;
       }
+
     &__header {
         width:500px;
         display:flex;
@@ -10,26 +12,33 @@
         justify-content: space-between;
         color:$main-orange;
         font-size: $md-font;
+        
         &:hover {
             cursor:pointer;
             color:$main-mutedYellow;
         }
+
         @media screen and (max-width: $break-large) {
             margin-bottom: 80px;
             display:block;
             width:100%;
           }
+
           @media screen and (max-width: $break-small) {
             margin-bottom: 20px;
           }
+
         &__rule {
             height:1px;
             background:$main-yellow;
             width: 300px;
+
             @media screen and (max-width: $break-large) {
                 display:none;
               }
+
         }
+
         &>h3 {
             @media screen and (max-width: $break-large) {
                 text-align: center;
@@ -38,12 +47,13 @@
         
     }
     &__content{
-
         display:flex;
         align-items: center;
         justify-content: space-between;
+
         &__text {
             width:500px;
+
             &__p {
                 font-size: $sm-font;
                 color:$main-mutedYellow;
@@ -51,9 +61,11 @@
                 &>p {
                     margin-top: 20px;
                 }
+
                 @media screen and (max-width: $break-large) {
                     margin-top: 60px;
                   }
+
                 @media screen and (max-width: $break-small) {
                     width:100%;
                     font-size: $xsm-font;
@@ -61,12 +73,14 @@
                     margin-top: 40px;
                     text-align: center;
                 }
+
             }   
             &__techs {
                 display:flex;
                 align-items: center;
                 color:$main-mutedYellow;
                 font-size: $sm-font;
+
                 &>ul {
                     width:250px;
                     margin-top: 30px;
@@ -77,19 +91,23 @@
                     font-size: $xsm-font;
                 }
             }
+
             @media screen and (max-width: $break-small) {
                 width:100%;
             }
         }
         &__image {
             position:relative;
+
             &__imageBorder {
                 border: 1px solid $main-orange;
                 height: 360px;
                 width: 360px;
+
                 &:hover {
                     background:$main-orange;
                 }
+
                 @media screen and (max-width: $break-small) {
                     display:none;
                 }
@@ -101,6 +119,7 @@
                 height: 360px;
                 width: 360px;
                 background:$main-red;
+
                 @media screen and (max-width: $break-small) {
                     top:0px;
                     left: 0px;
@@ -110,6 +129,7 @@
                   }
             }
         }
+        
         @media screen and (max-width: $break-large) {
             display:flex;
             flex-direction: column;

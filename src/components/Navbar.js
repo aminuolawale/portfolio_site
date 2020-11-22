@@ -3,6 +3,7 @@ import mainLogo from "../img/main-logo.png";
 import Button from "./Buttons";
 import { animateScroll } from "react-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { isSmall } from "../utils";
 const Navbar = () => {
   const [dropdownActive, setDropdownActive] = useState(false);
 
@@ -10,7 +11,6 @@ const Navbar = () => {
     animateScroll.scrollTo(0);
   }, []);
 
-  const isSmall = () => window.innerWidth <= 600;
   const homeScroll = () => {
     if (window.innerHeight) animateScroll.scrollTo(0);
   };

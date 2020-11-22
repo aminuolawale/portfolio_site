@@ -6,16 +6,20 @@
     background:$main-dark;
     z-index: 4;
     top:0;
+
     @media screen and (max-width: $break-small) {
         width:100%;
       }
+
     &__header {
         height:100px;
         display:flex;
         align-items: center;
+
         &:hover{
             cursor:pointer;
         }
+
         @media screen and (max-width: $break-small) {
             display:flex;
             align-items: center;
@@ -29,6 +33,7 @@
               }
           }
     }
+
     &__links {
         display:flex;
         align-items: center;
@@ -37,21 +42,26 @@
         &__item {
             color:$main-yellow;
             padding: 0 30px;
+
             &:hover {
                 cursor:pointer;
                 color:$main-mutedYellow;
             }
         }
+
         @media screen and (max-width: $break-small) {
             display:none;
           }
     }
+
     &__toggler {
         display:none;
         color:$main-orange;
+
         &:hover{
             cursor:pointer;
         }
+
         @media screen and (max-width: $break-small) {
             display:block;
         }
@@ -75,11 +85,13 @@
         border: .5px solid  rgba(237, 211, 130, .5) ;
         height:216px;
     }
+
     &>li{
         @media screen and (max-width: $break-small) {
             padding: 10px 20px;
         }
     }
+    
     &>li:last-child{
         @media screen and (max-width: $break-small) {
             padding: 20px 0px;
