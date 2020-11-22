@@ -4,6 +4,14 @@ import abstract from "../img/abstract.png";
 import GlitchClip from "react-glitch-effect/core/Clip";
 import { animateScroll } from "react-scroll";
 const Home = () => {
+  const isSmall = () => window.innerWidth <= 600;
+  const handleScroll = () => {
+    if (isSmall()) {
+      animateScroll.scrollTo(5500);
+    } else {
+      animateScroll.scrollTo(4600);
+    }
+  };
   return (
     <div className="hero">
       <div className="hero__text">
@@ -16,11 +24,7 @@ const Home = () => {
           maintain web and mobile apps, API’s, and microservices.
         </p>
         <div className="hero__text__button">
-          <Button
-            text="Contact Me"
-            size="md"
-            action={() => animateScroll.scrollTo(4600)}
-          ></Button>
+          <Button text="Contact Me" size="md" action={handleScroll}></Button>
         </div>
       </div>
       <div className="hero__image">

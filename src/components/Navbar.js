@@ -41,7 +41,7 @@ const Navbar = () => {
 
   const contactScroll = () => {
     if (isSmall()) {
-      animateScroll.scrollTo(5200);
+      animateScroll.scrollTo(5500);
     } else {
       animateScroll.scrollTo(4600);
     }
