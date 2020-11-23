@@ -30,7 +30,7 @@ function App() {
           transition={{ duration: 2.5 }}
         >
           <GlitchClip duration="4.5s">
-            <img src={Abstract}></img>
+            <img src={Abstract} alt="abstract-loading"></img>
           </GlitchClip>
         </motion.div>
       ) : (
