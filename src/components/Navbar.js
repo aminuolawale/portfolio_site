@@ -27,7 +27,7 @@ const Navbar = () => {
     if (isSmall()) {
       animateScroll.scrollTo(1400);
     } else {
-      animateScroll.scrollTo(1685);
+      animateScroll.scrollTo(1585);
     }
   };
 
@@ -35,7 +35,7 @@ const Navbar = () => {
     if (isSmall()) {
       animateScroll.scrollTo(2310);
     } else {
-      animateScroll.scrollTo(2535);
+      animateScroll.scrollTo(2435);
     }
   };
 

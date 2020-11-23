@@ -4,13 +4,20 @@ import abstract from "../img/abstract.png";
 import GlitchClip from "react-glitch-effect/core/Clip";
 import { animateScroll } from "react-scroll";
 import { isSmall } from "../utils";
+import useSound from "use-sound";
+
 const Home = () => {
+  const [play] = useSound("../sounds/glitch.mp3");
   const handleScroll = () => {
     if (isSmall()) {
       animateScroll.scrollTo(5500);
     } else {
       animateScroll.scrollTo(4600);
     }
+  };
+  const handleAbstractClick = () => {
+    console.log("cldkjflaksd");
+    play();
   };
   return (
     <div className="hero">
@@ -27,7 +34,7 @@ const Home = () => {
           <Button text="Contact Me" size="md" action={handleScroll}></Button>
         </div>
       </div>
-      <div className="hero__image">
+      <div className="hero__image" onClick={handleAbstractClick}>
         <GlitchClip onHover={true}>
           <img src={abstract} alt="abstractw"></img>
         </GlitchClip>
