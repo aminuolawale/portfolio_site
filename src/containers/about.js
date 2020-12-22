@@ -1,6 +1,7 @@
 import React from "react";
 import { animateScroll } from "react-scroll";
 import ListItem from "../components/ListItem";
+import aminu from "../img/aminu.jpg";
 const About = () => {
   return (
     <div className="about">
@@ -10,7 +11,9 @@ const About = () => {
       </div>
       <div className="about__content">
         <div className="about__content__image">
-          <div className="about__content__image__img"></div>
+          <div className="about__content__image__img">
+            <img src={aminu}></img>
+          </div>
           <div className="about__content__image__imageBorder"></div>
         </div>
         <div className="about__content__text">
@@ -18,15 +21,6 @@ const About = () => {
             <p>
               Hi I am Aminu Olawale, a Software Engineer based in Lagos,
               Nigeria.
-            </p>
-            <p>
-              I love making cool things with computers. I started out as a 3D
-              Animator making short animated films and adverts and got drawn
-              into the world of software engineering, particularly game
-              development. The web grew on me and I soon found myself building
-              and deploying web applications. I love the dynamism and speed of
-              evolution of web technologies and I find it exciting to always
-              have something new to learn everyday.
             </p>
             <p>
               Below is the current snapshot of the ever-growing list of tools
@@ -41,7 +35,7 @@ const About = () => {
             </ul>
             <ul>
               <ListItem>React/React-Native</ListItem>
-              <ListItem>Golang</ListItem>
+              <ListItem>Go</ListItem>
               <ListItem>Docker</ListItem>
             </ul>
           </div>

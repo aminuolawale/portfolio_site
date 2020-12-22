@@ -16,7 +16,7 @@ const Home = () => {
     }
   };
   const handleAbstractClick = () => {
-    console.log("cldkjflaksd");
+    // still no sounds yet
     play();
   };
   return (
