@@ -12,7 +12,7 @@ const About = () => {
       <div className="about__content">
         <div className="about__content__image">
           <div className="about__content__image__img">
-            <img src={aminu}></img>
+            <img src={aminu} alt="aminu"></img>
           </div>
           <div className="about__content__image__imageBorder"></div>
         </div>
